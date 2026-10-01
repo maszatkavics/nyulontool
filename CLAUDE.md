@@ -16,10 +16,12 @@ Tiny static site, hosted by GitHub Pages at https://maszatkavics.github.io/nyulo
 ## Structure
 
 - `index.html` – blog front page; each article is an `<a class="card">` in `.feed` with a cover image + title. Add new articles by adding another card.
-- `nyul/index.html` – first article (URL `/nyulontool/nyul/`). Looks like the original single-page site (full-height cover-fit GIF) but the header reads `-= nyúl-ON-tool =- NYÚL`; the title links back to the front page.
+- `nyul/index.html` – first article (URL `/nyulontool/nyul/`). Header is a 3-column grid (`←` back link | centered `-= nyúl-ON-tool =-` | empty spacer) at the same size as the front page; below it a left-aligned `> NYÚL` article title, then the full-width cover-fit GIF.
 - `nyul.gif` (~8.7 MB, article content) and `nyul-orig.jpeg` (~125 KB, used as the lightweight card cover so the front page loads fast on mobile). Subpages reference shared assets with `../`.
 
 ## Conventions
 
 - Each article lives in its own folder with an `index.html`, so URLs have no `.html` suffix.
 - Keep covers small/optimized; avoid putting the big GIF on the front page.
+- Every page ends with a small `© kavics` footer. Every article page should follow the subpage layout: back-arrow header, then `> TITLE` on its own line, then content, then footer.
+- Workflow: owner prefers pushing straight to `main` (no PRs) for this hobby project.
