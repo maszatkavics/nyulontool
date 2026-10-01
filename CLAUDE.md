@@ -24,5 +24,5 @@ Tiny static site, hosted by GitHub Pages at https://maszatkavics.github.io/nyulo
 
 - Each article lives in its own folder with an `index.html`, so URLs have no `.html` suffix.
 - Keep covers small/optimized; avoid putting the big GIF on the front page.
-- Every page ends with a small `© kavics` footer. Every article page should follow the subpage layout: back-arrow header, then `> TITLE` on its own line, then content, then footer.
+- Every page ends with a small ASCII-rabbit footer (a `<pre>` inside `.footer`). Every article page should follow the subpage layout: back-arrow header, then `> TITLE` on its own line, then content, then footer.
 - Workflow: owner prefers pushing straight to `main` (no PRs) for this hobby project.
