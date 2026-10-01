@@ -17,6 +17,7 @@ Tiny static site, hosted by GitHub Pages at https://maszatkavics.github.io/nyulo
 
 - `index.html` – blog front page; each article is an `<a class="card">` in `.feed` with a cover image + title. Add new articles by adding another card.
 - `nyul/index.html` – first article (URL `/nyulontool/nyul/`). Header is a 3-column grid (`←` back link | centered `-= nyúl-ON-tool =-` | empty spacer) at the same size as the front page; below it a left-aligned `> NYÚL` article title, then the full-width cover-fit GIF.
+- `spoon/index.html` – comic article: `tile-0.jpg`…`tile-10.jpg` stacked vertically (tile 0 is also the front-page card cover). Tiles were cut from `spoon/spoon-original.jpg` (750x1125, numbered panels) with Pillow using hand-picked pixel boxes and upscaled 2x. Wide tiles (4, 9) have small text on phones; a higher-res source or splitting into sub-panels would fix that.
 - `nyul.gif` (~8.7 MB, article content) and `nyul-orig.jpeg` (~125 KB, used as the lightweight card cover so the front page loads fast on mobile). Subpages reference shared assets with `../`.
 
 ## Conventions

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<title>SPOON | nyúl-ON-tool</title>
+<style>
+  :root {
+    --fg: wheat;
+    --dim: #8a7f66;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: var(--fg);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* back button | centered title | invisible spacer of equal width */
+  .title {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    padding: 16px 10px;
+  }
+
+  .back {
+    justify-self: start;
+    color: inherit;
+    text-decoration: none;
+    padding: 0 12px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .back:hover, .back:active { color: #fff; }
+
+  .article-title {
+    margin: 0;
+    padding: 8px 12px 10px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .article-title::before {
+    content: "> ";
+    color: var(--dim);
+  }
+
+  .comic {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tile {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: .75rem;
+    color: var(--dim);
+    padding: 12px 10px 16px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="title">
+    <a class="back" href="../" aria-label="Vissza">&larr;</a>
+    <span>-= nyúl-ON-tool =-</span>
+    <span></span>
+  </div>
+
+  <h1 class="article-title">SPOON</h1>
+
+  <div class="comic">
+    <img class="tile" src="tile-0.jpg" alt="SPOON 0">
+    <img class="tile" src="tile-1.jpg" alt="SPOON 1" loading="lazy">
+    <img class="tile" src="tile-2.jpg" alt="SPOON 2" loading="lazy">
+    <img class="tile" src="tile-3.jpg" alt="SPOON 3" loading="lazy">
+    <img class="tile" src="tile-4.jpg" alt="SPOON 4" loading="lazy">
+    <img class="tile" src="tile-5.jpg" alt="SPOON 5" loading="lazy">
+    <img class="tile" src="tile-6.jpg" alt="SPOON 6" loading="lazy">
+    <img class="tile" src="tile-7.jpg" alt="SPOON 7" loading="lazy">
+    <img class="tile" src="tile-8.jpg" alt="SPOON 8" loading="lazy">
+    <img class="tile" src="tile-9.jpg" alt="SPOON 9" loading="lazy">
+    <img class="tile" src="tile-10.jpg" alt="SPOON 10" loading="lazy">
+  </div>
+
+  <footer class="footer">© kavics</footer>
+
+</body>
+</html>
