@@ -38,7 +38,9 @@
     justify-self: start;
     color: inherit;
     text-decoration: none;
-    padding: 0 12px;
+    font-size: 2.2rem;
+    line-height: 1;
+    padding: 6px 16px;
     -webkit-tap-highlight-color: transparent;
   }
 
@@ -74,6 +76,11 @@
     border-radius: 4px;
   }
 
+  .footer .back {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+
   .footer {
     text-align: center;
     font-size: .75rem;
@@ -106,7 +113,10 @@
     <img class="tile" src="tile-10.jpg" alt="SPOON 10" loading="lazy">
   </div>
 
-  <footer class="footer">© kavics</footer>
+  <footer class="footer">
+    <a class="back" href="../" aria-label="Vissza">&larr;</a><br>
+    © kavics
+  </footer>
 
 </body>
 </html>
