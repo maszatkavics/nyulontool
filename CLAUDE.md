@@ -16,9 +16,9 @@ Tiny static site, hosted by GitHub Pages at https://maszatkavics.github.io/nyulo
 ## Structure
 
 - `index.html` – blog front page; each article is an `<a class="card">` in `.feed` with a cover image + title. Add new articles by adding another card.
-- `nyul/index.html` – first article (URL `/nyulontool/nyul/`). Header is a 3-column grid (`←` back link | centered `-= nyúl-ON-tool =-` | empty spacer) at the same size as the front page; below it a left-aligned `> NYÚL` article title, then the full-width cover-fit GIF.
+- `nyul/index.html` – hidden easter-egg article (URL `/nyulontool/nyul/`, `noindex`); it has **no card** on the front page and is reached only via the clickable ASCII-rabbit footer on `index.html` and `spoon/index.html`. Header is a 3-column grid (`←` back link | centered `-= nyúl-ON-tool =-` | empty spacer) at the same size as the front page; below it a left-aligned `> NYÚL` article title, then the full-width cover-fit GIF.
 - `spoon/index.html` – comic article. Numbered tiles 0–10 of `spoon/spoon-original.jpg` (1024x1536; cut boxes are defined on a 750x1125 grid and scaled by width/750) are cut with Pillow (hand-picked pixel boxes, 2x upscale) into `tile-N.jpg`, or `tile-Na/b/c.jpg` when a numbered tile holds several sub-panels (4, 5, 6, 7, 8, 9). Sub-panels of a tile are stacked full-width in one `<section class="panel">` so wide tiles read well on phones. Tile 6 is split at x=645 so its overlapping speech bubbles stay intact. `tile-0.jpg` is also the front-page card cover. If the source image is replaced, the cut boxes must be redone.
-- `nyul.gif` (~8.7 MB, article content) and `nyul-orig.jpeg` (~125 KB, used as the lightweight card cover so the front page loads fast on mobile). Subpages reference shared assets with `../`.
+- `nyul.gif` (~8.7 MB, article content) and `nyul-orig.jpeg` (~125 KB, lightweight cover, currently unused since the card was removed). Subpages reference shared assets with `../`.
 
 ## Conventions
 
